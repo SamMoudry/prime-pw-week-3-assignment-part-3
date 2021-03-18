@@ -4,12 +4,12 @@ console.log('****** Part Supply *******');
 // 1. Create a variable called 'partsNeeded' with a value of the number 40
 //    & console.log the variable
 console.log('1. Number of partsNeeded:');
-var partsNeeded = 40;
+const partsNeeded = 40;
 console.log(partsNeeded);
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 console.log('2. Array of supplyChanges:');
-var supplyChanges = [3, 5, -6, 0, 7, 11];
+const supplyChanges = [3, 5, -6, 0, 7, 11];
 
 // 3. Console log the value of 'supplyChanges' at index 2
 console.log('3. Item at index 2 is:');
@@ -28,9 +28,9 @@ console.log(supplyChanges);
 //    - if the value is 0, skip it. Do not log it to the console.
 //    - if the value is negative, format the log as 'Part count -x.'
 console.log('6. Showing supplyChanges...');
-for (var i=0; i<supplyChanges.length; i++) {
+for (let i=0; i<supplyChanges.length; i++) {
   if (supplyChanges[i] == 0) {
-    i++
+    i+=0
   }
   if (supplyChanges[i] < 0) {
     console.log('Part count', supplyChanges[i]);
