@@ -44,7 +44,8 @@ for (let i=0; i<supplyChanges.length; i++) {
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop.
 console.log('7. Showing supplyChanges with "for of" loop');
-for ( x of supplyChanges) {
+
+for (let x of supplyChanges) {
   if (x == 0) {
     x+=0
   }
@@ -57,7 +58,7 @@ for ( x of supplyChanges) {
 }
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 console.log('8. Showing supplyChanges with "while" loop');
-i = 0;
+let i = 0;
 while (i < supplyChanges.length) {
   if (supplyChanges[i] == 0) {
     i+=0
